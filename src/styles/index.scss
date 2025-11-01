@@ -1,0 +1,126 @@
+/* ================================
+   🌍 ГЛОБАЛЬНЫЕ СТИЛИ
+   ================================ */
+
+/* Сброс браузерных стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальные переменные */
+:root {
+  --color-primary: #e91e63;
+  --color-bg: #fff6f8;
+  --color-text: #333;
+
+  --font-main: "Poppins", sans-serif;
+
+  --container-width: 1200px;
+}
+
+/* Базовые стили */
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  background: var(--color-bg);
+  font-family: var(--font-main);
+  color: var(--color-text);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Контейнер */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Заголовки и текст */
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Кнопка (общий стиль, можно переиспользовать) */
+button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: color-mix(var(--color-primary), 8%);
+  }
+}
+
+/* ================================
+   📱 АДАПТИВ
+   ================================ */
+
+/* Планшеты (до 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Мобильные (до 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+/* ================================
+   ✨ АНИМАЦИИ
+   ================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
