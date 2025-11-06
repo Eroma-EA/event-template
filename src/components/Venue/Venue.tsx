@@ -1,11 +1,11 @@
-import type { FC } from 'react'
-import './Venue.scss'
+import type { FC } from "react";
+import "./Venue.scss";
 
-const VENUE_ADDRESS = 'Central Park, New York, NY' // replace with actual address
+const VENUE_ADDRESS = "Central Park, New York, NY"; // replace with actual address
 
 const Venue: FC = () => {
-  const mapsUrl = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_ADDRESS)}`
-  const embed = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_ADDRESS)}&output=embed`
+  const mapsUrl = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_ADDRESS)}`;
+  const embed = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_ADDRESS)}&output=embed`;
 
   return (
     <section className="venue">
@@ -18,11 +18,13 @@ const Venue: FC = () => {
         </div>
 
         <p className="venue__actions">
-          <a className="venue__link" href={mapsUrl} target="_blank" rel="noreferrer">Открыть в Google Maps</a>
+          <a className="venue__link" href={mapsUrl} target="_blank" rel="noreferrer">
+            Открыть в Google Maps
+          </a>
         </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Venue
+export default Venue;

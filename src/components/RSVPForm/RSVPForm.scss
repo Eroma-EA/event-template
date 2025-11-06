@@ -1,12 +1,11 @@
-
 .rsvp {
   max-width: 520px;
   margin: 2rem auto;
   padding: 1rem;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .rsvp__title {
@@ -32,11 +31,12 @@
   font-size: 0.95rem;
 }
 
-.rsvp__input, .rsvp__select {
+.rsvp__input,
+.rsvp__select {
   width: 100%;
   padding: 0.5rem 0.6rem;
   margin-top: 0.25rem;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   box-sizing: border-box;
   background: #fff;
@@ -47,9 +47,14 @@
   gap: 0.6rem;
 }
 
-.rsvp__small { flex: 1; }
+.rsvp__small {
+  flex: 1;
+}
 
-.rsvp__actions { text-align: center; margin-top: 1rem; }
+.rsvp__actions {
+  text-align: center;
+  margin-top: 1rem;
+}
 
 .rsvp__btn {
   background: var(--color-primary);
@@ -61,4 +66,6 @@
   font-weight: 600;
 }
 
-.rsvp__btn:hover { opacity: 0.95; }
+.rsvp__btn:hover {
+  opacity: 0.95;
+}
