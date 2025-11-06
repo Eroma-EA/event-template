@@ -14,7 +14,7 @@
 /* Глобальные переменные */
 :root {
   --color-primary: #e91e63;
-  --color-bg: #fff6f8;
+  --color-bg: #ffe3e9;
   --color-text: #333;
 
   --font-main: "Poppins", sans-serif;
@@ -45,6 +45,10 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 20px;
+
+  .home{
+    box-shadow: #333 0px 4px 15px -5px;
+  }
 }
 
 /* Заголовки и текст */

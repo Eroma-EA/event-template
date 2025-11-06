@@ -1,10 +1,21 @@
 import React from "react";
+import Header from "../../components/Header/Header";
+import InviteCard from "../../components/inviteCard/inviteCard";
+import RSVPForm from "../../components/RSVPForm/RSVPForm";
+import Venue from "../../components/Venue/Venue";
+import Footer from "../../components/Footer/Footer";
+import "./Home.scss";
 
 const Home = () => {
   return (
-    <section className="container fade-in">
-      <h1>Добро пожаловать!</h1>
-      <p>Приглашение на событие</p>
+    <section className="container home fade-in">
+      <Header />
+      <InviteCard />
+      <main>
+        <RSVPForm />
+        <Venue />
+      </main>
+      <Footer />
     </section>
   );
 };

@@ -1,0 +1,26 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	font-weight: 600;
+	padding: 0.6rem 1rem;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.18s ease;
+	border: 1px solid transparent;
+}
+
+.btn--primary {
+	background: var(--color-primary);
+	color: #fff;
+}
+
+.btn--outline {
+	background: transparent;
+	color: var(--color-primary);
+	border-color: rgba(0,0,0,0.08);
+}
+
+.btn:active { transform: translateY(1px); }
+

@@ -1,0 +1,12 @@
+.invite {
+	background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+	padding: 2rem 1rem;
+	margin: 1.25rem 0;
+	border-radius: 10px;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.invite__title { text-align: center; font-size: 1.6rem; color: var(--color-primary); }
+.invite__subtitle { text-align: center; color: var(--color-text); margin-top: 0.5rem; }
+.invite__date { text-align: center; margin-top: 0.6rem; font-weight: 700; }
+.invite__actions { display:flex; justify-content:center; margin-top: 0.9rem; }

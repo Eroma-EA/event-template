@@ -1,0 +1,15 @@
+// Project SCSS variables (mapped to :root CSS variables)
+$color-primary: var(--color-primary, #e91e63);
+$color-bg: var(--color-bg, #ffe3e9);
+$color-text: var(--color-text, #333);
+
+$font-main: var(--font-main, 'Poppins', sans-serif);
+
+$container-width: var(--container-width, 1200px);
+
+// Spacing scale
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+
