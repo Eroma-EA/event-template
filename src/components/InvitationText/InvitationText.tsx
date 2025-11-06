@@ -1,4 +1,3 @@
-import React from 'react';
 import './InvitationText.scss';
 
 const InvitationText = () => {
