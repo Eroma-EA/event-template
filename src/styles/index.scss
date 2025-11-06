@@ -2,8 +2,8 @@
   🌍 ГЛОБАЛЬНЫЕ СТИЛИ
   ================================ */
 
-/* Google Fonts: Playfair Display (headings) + Inter (UI/text) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+/* Google Fonts: Cormorant Garamond (headings) + Montserrat (UI/text) with Cyrillic support */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&subset=cyrillic,latin&display=swap');
 
 /* Сброс браузерных стилей */
 *,
@@ -20,9 +20,9 @@
   --color-bg: #ffe3e9;
   --color-text: #333;
 
-  /* Fonts: use Playfair for headings and Inter for UI/text */
-  --font-main: 'Playfair Display', serif;
-  --font-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  /* Fonts with Cyrillic support */
+  --font-main: 'Cormorant Garamond', serif;
+  --font-ui: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 
   --container-width: 1200px;
 }
