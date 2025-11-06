@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/Header/Header";
 import InviteCard from "../../components/inviteCard/inviteCard";
 import RSVPForm from "../../components/RSVPForm/RSVPForm";

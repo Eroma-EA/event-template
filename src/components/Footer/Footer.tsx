@@ -1,7 +1,7 @@
-import React from 'react'
+import type { FC } from 'react'
 import './Footer.scss'
 
-const Footer: React.FC = () => {
+const Footer: FC = () => {
 	return (
 		<footer className="site-footer">
 			<div className="site-footer__inner container">

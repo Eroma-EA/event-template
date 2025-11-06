@@ -1,11 +1,12 @@
-import React from 'react'
 import './Button.scss'
+import type { FC, ButtonHTMLAttributes, ReactNode } from 'react'
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: 'primary' | 'outline'
+  children?: ReactNode
 }
 
-const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', className = '', ...rest }) => {
+const Button: FC<ButtonProps> = ({ children, variant = 'primary', className = '', ...rest }) => {
   const cls = `btn btn--${variant} ${className}`.trim()
   return (
     <button className={cls} {...rest}>

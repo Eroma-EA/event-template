@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './RSVPForm.scss'
 
 type Status = 'yes' | 'no' | 'maybe'

@@ -1,4 +1,4 @@
-import React from 'react'
+import type { FC } from 'react'
 import './Calendar.scss'
 
 type Props = {
@@ -11,7 +11,7 @@ function daysInMonth(year: number, month: number) {
   return new Date(year, month + 1, 0).getDate()
 }
 
-const Calendar: React.FC<Props> = ({ date }) => {
+const Calendar: FC<Props> = ({ date }) => {
   const year = date.getFullYear()
   const month = date.getMonth()
   const day = date.getDate()

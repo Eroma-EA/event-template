@@ -1,9 +1,9 @@
-import React from 'react'
+import type { FC } from 'react'
 import './Venue.scss'
 
 const VENUE_ADDRESS = 'Central Park, New York, NY' // replace with actual address
 
-const Venue: React.FC = () => {
+const Venue: FC = () => {
   const mapsUrl = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_ADDRESS)}`
   const embed = `https://www.google.com/maps?q=${encodeURIComponent(VENUE_ADDRESS)}&output=embed`
 
