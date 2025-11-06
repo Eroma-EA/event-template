@@ -5,8 +5,8 @@ const Footer: FC = () => {
 	return (
 		<footer className="site-footer">
 			<div className="site-footer__inner container">
-				<p>© {new Date().getFullYear()} Arman & Diana — All rights reserved.</p>
-				<p>Contact: <a href="mailto:info@example.com">info@example.com</a></p>
+				<p>© {new Date().getFullYear()} Арман & Диана — Барлық құқықтар қорғалған.</p>
+				<p>Байланыс: <a href="mailto:info@example.com">info@example.com</a></p>
 			</div>
 		</footer>
 	)

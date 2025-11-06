@@ -32,11 +32,11 @@ const RSVPForm: React.FC = () => {
     e.preventDefault()
 
     const parts: string[] = []
-    parts.push(`Имя: ${name || '-'} `)
+    parts.push(`Аты-жөні: ${name || '-'} `)
     if (phone) parts.push(`Телефон: ${phone}`)
     if (email) parts.push(`Email: ${email}`)
-    parts.push(`Прибудут: ${status}`)
-    parts.push(`Гостей: ${guests}`)
+    parts.push(`Келеді: ${status === 'yes' ? 'Иә' : status === 'no' ? 'Жоқ' : 'Мүмкін'}`)
+    parts.push(`Қонақтар саны: ${guests}`)
 
     const payload = { name, phone, email, status, guests }
     saveLocally(payload)
@@ -51,43 +51,43 @@ const RSVPForm: React.FC = () => {
 
   return (
     <form id="rsvp-form" className="rsvp" onSubmit={handleSubmit} aria-label="RSVP form">
-      <h3 className="rsvp__title">Подтвердите участие (RSVP)</h3>
+      <h3 className="rsvp__title">Келетіндігіңізді растаңыз</h3>
 
-      {saved && <div className="rsvp__notice">Ответ сохранён локально. Откроется WhatsApp — не забудьте нажать «Отправить».</div>}
+      {saved && <div className="rsvp__notice">Жауабыңыз сақталды. WhatsApp ашылады — «Жіберу» түймесін басуды ұмытпаңыз.</div>}
 
       <label className="rsvp__label">
-        Имя
+        Аты-жөні
         <input className="rsvp__input" value={name} onChange={e => setName(e.target.value)} required />
       </label>
 
       <label className="rsvp__label">
-        Телефон (желательно WhatsApp)
+        Телефон (WhatsApp болғаны дұрыс)
         <input className="rsvp__input" value={phone} onChange={e => setPhone(e.target.value)} placeholder="+7..." />
       </label>
 
       <label className="rsvp__label">
-        Email (опционально)
+        Email (міндетті емес)
         <input className="rsvp__input" type="email" value={email} onChange={e => setEmail(e.target.value)} />
       </label>
 
       <div className="rsvp__row">
         <label className="rsvp__small">
-          Статус
+          Жауабыңыз
           <select className="rsvp__select" value={status} onChange={e => setStatus(e.target.value as Status)}>
-            <option value="yes">Приду</option>
-            <option value="maybe">Возможно</option>
-            <option value="no">Не приду</option>
+            <option value="yes">Келемін</option>
+            <option value="maybe">Мүмкін</option>
+            <option value="no">Келе алмаймын</option>
           </select>
         </label>
 
         <label className="rsvp__small">
-          Гостей
+          Қонақтар саны
           <input className="rsvp__input" type="number" min={0} value={guests} onChange={e => setGuests(Number(e.target.value))} />
         </label>
       </div>
 
       <div className="rsvp__actions">
-        <button className="rsvp__btn" type="submit">Отправить в WhatsApp</button>
+        <button className="rsvp__btn" type="submit">WhatsApp арқылы жіберу</button>
       </div>
     </form>
   )
